@@ -6,11 +6,44 @@
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <div id="root">
-      <h1>Hola Laboratoria!</h1>
-      <p>Espero que esto fuhncione</p> 
+    <div id="Pantalla1" class='centrar'>
+      <h1>Búsqueda del tesoro</h1>
+      <p>Bienvenid@, selecciona si deseas crear una pista secreta o descifrar tu pista secreta.</p> 
+      <button id='Crear' class="botones"><h2>Crear Pista</h2></button>
+      <button id='Descifrar' class="botones"><h2>Descifrar Pista</h2></button>
     </div>
+
+<div id='Pantalla2' class='centrar'>
+  <h1>Crear pista secreta</h2>
+  <p>Elige cuántas posiciones quieres que se desplace tu texto. </p>
+  <input id='offset' type="number" min="1" pattern="^[0-9]+" placeholder="Selecciona el número">
+  <p>Crea tu pista secreta. Recuerda que el texto que introduzcas debe estar en mayúsculas.</p>
+  <textarea name="comentarios" rows="5" cols="30" placeholder='Escribe aquí tu pista a codificar'></textarea>
+ <p> <button id='Crear2' class="botones"><h2>Crear Pista</h2></button> </p>
+ <p>¡Listo! Esta es tu pista secreta</p>
+ <textarea name="comentarios" rows="5" cols="30" placeholder='Aquí está tu pista secreta'></textarea>
+<p> <button id='regresar' class="botones"><h2> Regresar </h2></button> </p>
+</div>
+
+
+<div id='pantalla3' class='centrar'>
+  <h1>Descifrar pista secreta</h1>
+  <p>Elige cuántas posiciones quieres que se desplace tu texto. </p>
+  <input id='offset2' type="number" min="1" pattern="^[0-9]+" placeholder="Selecciona el número">
+  <p>Introduce tu pista secreta a descifrar.</p>
+  <textarea name="comentarios" rows="5" cols="30" placeholder='Escribe aquí tu pista a descifrar'></textarea>
+ <p> <button id='Descifrar2' class="botones"><h2>Descifrar Pista</h2></button> </p>
+ <p>¡Listo! Aquí está tu pista secreta descifrada</p>
+ <textarea name="comentarios" rows="5" cols="30" placeholder='Aquí está tu pista secreta descifrada'></textarea>
+  <p> <button id='regresar2' class="botones"><h2> Regresar </h2></button> </p>
+
+  
+</div>
+
+
     <script src="cipher.js"></script>
     <script src="index.js"></script>
   </body>
 </html>
+
+
