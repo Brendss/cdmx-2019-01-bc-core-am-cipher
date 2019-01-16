@@ -1,7 +1,7 @@
-let pagina1= document.getElementById('Crear').addEventListener('click', page1);
-let paina2= document.getElementById('Descifrar').addEventListener('click', page2);
-let pagina3= document.getElementById('regresar').addEventListener('click', page3);
-let pagina4= document.getElementById('regresar2').addEventListener('click', page3);
+let pagina1 = document.getElementById('Crear').addEventListener('click', page1);
+let paina2 = document.getElementById('Descifrar').addEventListener('click', page2);
+let pagina3 = document.getElementById('regresar').addEventListener('click', page3);
+let pagina4 = document.getElementById('regresar2').addEventListener('click', page3);
 let crear2 = document.getElementById('Crear2');
 
 
@@ -26,12 +26,11 @@ function page3() {
   document.getElementById('Pantalla3').style.display = 'none';
 }
 
-const offset = document.getElementById('desplazar');
+let offset = document.getElementById('desplazar');
 let mayus = document.getElementById('textACod');
 
 crear2.addEventListener('click', () => {
   mayus = mayus.value.toUpperCase();
-  window.cipher.encode(mayus)
+  offset = offset.value;
+  window.cipher.encode(offset, mayus)
 })
-
-
