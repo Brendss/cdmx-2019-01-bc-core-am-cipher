@@ -5,7 +5,6 @@ document.getElementById('regresar2').addEventListener('click', page3);
 let crear2 = document.getElementById('Crear2');
 
 
-
 function page1() {
   document.getElementById('Pantalla1').style.display = 'none';
   document.getElementById('Pantalla2').style.display = 'block';
@@ -30,6 +29,8 @@ let mayus = document.getElementById('textACod');
 crear2.addEventListener('click', () => {
   mayus = mayus.value.toUpperCase();
   offset = offset.value;
-  //document.getElementById('textCode').innerHTML = "Bienvenida " + name;
-  window.cipher.encode(offset, mayus)
-})
+  document.getElementById('textCod').innerHTML=window.cipher.encode(offset,mayus);
+});
+
+
+  

@@ -7,8 +7,8 @@ window.cipher = {
       const nuevoCodigo = String.fromCharCode(formula);
       cifradoC += nuevoCodigo;
     }
-     console.log (cifradoC)
-    //return cifradoC;
+     //console.log (cifradoC)
+    return cifradoC;
     //decode: () => {}
   }
 
