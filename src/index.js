@@ -1,4 +1,4 @@
-//para cambio de pamtallas
+//para cambio de pantallas
 document.getElementById("Crear").addEventListener("click", page1);
 document.getElementById("Descifrar").addEventListener("click", page2);
 document.getElementById("regresar").addEventListener("click", page3);
@@ -24,6 +24,7 @@ function page3() {
   document.getElementById("Pantalla3").style.display = "none";
 }
 
+//para codificar
 const desplazar = document.getElementById("desplazar");
 const textACod = document.getElementById("textACod");
 const crear2 = document.getElementById("Crear2");
@@ -34,12 +35,12 @@ crear2.addEventListener("click", () => {
   document.getElementById("textCod").innerHTML = window.cipher.encode(offset, mayus);
 });
 
+//para decodificar
 const desplazar2 = document.getElementById("desplazar2");
 const textADecod = document.getElementById("textADecod");
 const descifrar2 = document.getElementById("Descifrar2");
 
 descifrar2.addEventListener("click", () => {
-
   const text = textADecod.value.toUpperCase();
   const off = desplazar2.value;
   document.getElementById("textDecod").innerHTML = window.cipher.decode(off, text);
