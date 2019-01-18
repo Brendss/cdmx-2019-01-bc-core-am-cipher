@@ -5,12 +5,17 @@
   <meta charset="utf-8">
   <title>Caesar Cipher</title>
   <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css?family=Charmonman|Courgette|Fredericka+the+Great|Homemade+Apple|Parisienne"
+    rel="stylesheet">
 </head>
 
 <body>
   <div id="Pantalla1" class="centrar">
-    <h1>Búsqueda del tesoro</h1>
-    <p>Bienvenid@, selecciona si deseas crear una pista secreta o descifrar tu pista secreta.</p>
+    <h1 class="p1">Búsqueda del tesoro</h1>
+    <p>Esto es una búsqueda del tesoro. <br>
+      ¿Estás listo para buscar diamantes y oro?<br>
+      Ahora podrás crear o descifrar pistas secretas fácilmente.</p>
+    <p>Selecciona si deseas crear una pista secreta o descifrar tu pista secreta.</p>
     <button id="Crear" class="botones">
       <h2>Crear Pista</h2>
     </button>
@@ -21,25 +26,27 @@
 
   <div id="Pantalla2" class="centrar hide">
     <h1>Crear pista secreta</h1>
-      <p>Elige cuántas posiciones quieres que se desplace tu texto. </p>
-      <input id="desplazar" type="number" min="1" placeholder="Selecciona">
-      <p>Escribe tu texto para codificarlo.</p>
-      <textarea id="textACod" rows="5" cols="30" placeholder="Escribe aquí tu pista a codificar"></textarea>
-      <p> <button id="Crear2" class="botones">
-          <h2>Crear Pista</h2>
-        </button> </p>
-      <p>¡Listo! Esta es tu pista secreta.</p>
-      <textarea id="textCod" rows="5" cols="30" placeholder="Aquí está tu pista secreta"></textarea>
-      <p> <button id="regresar" class="botones">
-          <h2> Regresar </h2>
-        </button> </p>
+    <p>Para comenzar a crear tu pista elige un número.</p>
+    <input id="desplazar" type="number" min="1" placeholder="Selecciona el número">
+    <p>Escribe tu texto para codificarlo.</p>
+    <textarea id="textACod" rows="5" cols="30" placeholder="Escribe aquí tu pista a codificar"></textarea>
+    <p> <button id="Crear2" class="botones">
+        <h2>Crear Pista</h2>
+      </button> </p>
+    <p>¡Listo! Esta es tu pista secreta.</p>
+    <textarea id="textCod" rows="5" cols="30" placeholder="Aquí está tu pista secreta"></textarea>
+    <p>Ahora puedes compartir tu pista a tus amigos,<br>
+      no olvides compartir también el número que elegiste.</p>
+    <p> <button id="regresar" class="botones">
+        <h2> Regresar </h2>
+      </button> </p>
   </div>
 
 
   <div id="Pantalla3" class="centrar hide">
     <h1>Descifrar pista secreta</h1>
-    <p>Elige cuántas posiciones quieres que se desplace tu texto. </p>
-    <input id="desplazar2" type="number" min = "1" placeholder="Selecciona">
+    <p>Selecciona el número que te dieron. </p>
+    <input id="desplazar2" type="number" min="1" placeholder="Selecciona">
     <p>Introduce tu pista secreta a descifrar.</p>
     <textarea id="textADecod" rows="5" cols="30" placeholder="Escribe aquí tu pista a descifrar"></textarea>
     <p> <button id="Descifrar2" class="botones">
@@ -47,6 +54,9 @@
       </button> </p>
     <p>¡Listo! Aquí está tu pista secreta descifrada.</p>
     <textarea id="textDecod" rows="5" cols="30" placeholder="Aquí está tu pista secreta descifrada"></textarea>
+    <p>¡Mucho éxito!
+
+    </p>
     <p> <button id="regresar2" class="botones">
         <h2> Regresar </h2>
       </button> </p>

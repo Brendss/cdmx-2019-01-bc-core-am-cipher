@@ -1,7 +1,57 @@
 .centrar {
-    text-align:center
-  }
-  .hide{
-      display:none;
-  }
+  text-align: center
+}
 
+.hide {
+  display: none;
+}
+
+.p1 {
+  height: 150px;
+}
+
+h1 {
+  font-family: 'Fredericka the Great', cursive;
+  font-size: 450%;
+  color:#E6E6E6;
+}
+
+p {
+    font-family: 'Courgette', cursive;
+    font-size: 180%;
+    color:#8F8F8F;
+}
+
+h2 {
+    font-family: 'Fredericka the Great', cursive;
+    font-size: 150%;
+    color: #A67745
+}
+
+
+#Pantalla1 {
+  background-image:
+    url("https://www.alunira.com/IMG/arton9.jpg?1472546134"); 
+  background-attachment: fixed;
+  background-size: cover;
+  height: 530px;
+  
+
+}
+
+
+#Pantalla2 {
+  background-image:
+    url("http://www.cronicanorte.es/wp-content/uploads/2016/07/mapa-tesoro-b%C3%BAsqueda.jpg");
+  background-attachment: fixed;
+  background-size: cover;
+  height: 900px;
+}
+
+#Pantalla3 {
+  background-image:
+    url("http://www.cronicanorte.es/wp-content/uploads/2016/07/mapa-tesoro-b%C3%BAsqueda.jpg");
+  background-attachment: fixed;
+  background-size: cover;
+  height: 900px;
+}
