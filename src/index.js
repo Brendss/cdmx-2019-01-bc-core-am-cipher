@@ -30,7 +30,7 @@ const textACod = document.getElementById("textACod");
 const crear2 = document.getElementById("Crear2");
 
 crear2.addEventListener("click", () => {
-  const mayus = textACod.value.toUpperCase();
+  const mayus = textACod.value;
   const offset = desplazar.value;
   document.getElementById("textCod").innerHTML = window.cipher.encode(offset, mayus);
 });
@@ -41,7 +41,7 @@ const textADecod = document.getElementById("textADecod");
 const descifrar2 = document.getElementById("Descifrar2");
 
 descifrar2.addEventListener("click", () => {
-  const text = textADecod.value.toUpperCase();
+  const text = textADecod.value;
   const off = desplazar2.value;
   document.getElementById("textDecod").innerHTML = window.cipher.decode(off, text);
 });
