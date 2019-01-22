@@ -22,6 +22,13 @@ describe('cipher', () => {
     it('debería retornar " !@" para " !@"', () => {
       assert.equal(cipher.encode(33, ' !@'), ' !@');
     });
+//Para minusculas
+    it('debería retornar "hijklmnopqrstuvwxyzabcdefg" para "abcdefghijklmnopqrstuvwxyz" con offset 33', () => {
+      assert.equal(
+        cipher.encode(33, "abcdefghijklmnopqrstuvwxyz"),
+        "hijklmnopqrstuvwxyzabcdefg"
+      );
+    });
 
     //
     // Hacker edition
