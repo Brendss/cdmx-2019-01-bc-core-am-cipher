@@ -10,59 +10,75 @@
 </head>
 
 <body>
-  <div id="Pantalla1" class="centrar">
-    <h1 class="p1">Búsqueda del tesoro</h1>
-    <p>Esto es una búsqueda del tesoro. <br>
-      ¿Estás listo para buscar diamantes y oro?<br>
-      Ahora podrás crear o descifrar pistas secretas fácilmente.</p>
-    <p>Selecciona si deseas crear una pista secreta o descifrar tu pista secreta.</p>
+  <section id="Pantalla1" class="centrar">
+    <header>
+      <h1 class="p1">Búsqueda del tesoro</h1>
+    </header>
+    <main id="parr" class="centrar">
+      <p>Esto es una búsqueda del tesoro. <br>
+        ¿Estás listo para buscar diamantes y oro?<br>
+        Ahora podrás crear o descifrar pistas secretas fácilmente.</p>
+      <p>Selecciona si deseas crear una pista secreta o descifrar tu pista secreta.</p>
+    </main>
     <button id="Crear" class="botones">
-      <h2>Crear Pista</h2>
+      <h2>Crear</h2>
     </button>
     <button id="Descifrar" class="botones">
-      <h2>Descifrar Pista</h2>
+      <h2>Descifrar</h2>
     </button>
-  </div>
+  </section>
 
-  <div id="Pantalla2" class="centrar hide">
-    <h1>Crear pista secreta</h1>
+  <section id="Pantalla2" class="centrar hide">
+    <header>
+      <h1>Crear pista secreta</h1>
+    </header>
     <p>Para comenzar a crear tu pista elige un número.</p>
-    <input id="desplazar" type="number" min="1" placeholder="Selecciona el número">
+    <input id="desplazar" class="textArea" type="number" min="1" placeholder="Selecciona el número">
     <p>Escribe tu texto para codificarlo.</p>
-    <textarea id="textACod" rows="5" cols="30" placeholder="Escribe aquí tu pista a codificar"></textarea>
+    <textarea id="textACod" class="textArea" rows="5" cols="30" placeholder="Escribe aquí tu pista a codificar"></textarea>
     <p> <button id="Crear2" class="botones">
-        <h2>Crear Pista</h2>
+        <h2>Crear</h2>
       </button> </p>
     <p>¡Listo! Esta es tu pista secreta.</p>
-    <textarea id="textCod" rows="5" cols="30" placeholder="Aquí está tu pista secreta"></textarea>
+    <textarea id="textCod" class="textArea" rows="5" cols="30" placeholder="Aquí está tu pista secreta"></textarea>
     <p>Ahora puedes compartir tu pista a tus amigos,<br>
       no olvides compartir también el número que elegiste.</p>
     <p> <button id="regresar" class="botones">
         <h2> Regresar </h2>
-      </button> </p>
-  </div>
+      </button>
+      <button id="borrar" class="botones">
+        <h2> Borrar</h2>
+      </button>
+    </p>
+  </section>
 
 
-  <div id="Pantalla3" class="centrar hide">
-    <h1>Descifrar pista secreta</h1>
+  <section id="Pantalla3" class="centrar hide">
+    <header>
+      <h1>Descifrar pista secreta</h1>
+    </header>
     <p>Selecciona el número que te dieron. </p>
-    <input id="desplazar2" type="number" min="1" placeholder="Selecciona">
+    <input id="desplazar2" class="textArea" type="number" min="1" placeholder="Selecciona">
     <p>Introduce tu pista secreta a descifrar.</p>
-    <textarea id="textADecod" rows="5" cols="30" placeholder="Escribe aquí tu pista a descifrar"></textarea>
+    <textarea id="textADecod" class="textArea" rows="5" cols="30" placeholder="Escribe aquí tu pista a descifrar"></textarea>
     <p> <button id="Descifrar2" class="botones">
-        <h2>Descifrar Pista</h2>
+        <h2>Descifrar</h2>
       </button> </p>
     <p>¡Listo! Aquí está tu pista secreta descifrada.</p>
-    <textarea id="textDecod" rows="5" cols="30" placeholder="Aquí está tu pista secreta descifrada"></textarea>
+    <textarea id="textDecod" class="textArea" rows="5" cols="30" placeholder="Aquí está tu pista secreta descifrada"></textarea>
     <p>¡Mucho éxito!
 
     </p>
     <p> <button id="regresar2" class="botones">
         <h2> Regresar </h2>
-      </button> </p>
+      </button>
+      <button id="borrar2" class="botones">
+        <h2> Borrar</h2>
+      </button>
+    </p>
 
 
-  </div>
+  </section>
 
 
   <script src="cipher.js"></script>
