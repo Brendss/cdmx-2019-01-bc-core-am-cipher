@@ -1,4 +1,4 @@
-*{
+* {
   margin: 0%;
 }
 
@@ -14,79 +14,91 @@
   height: 150px;
 }
 
-.botones{
+.botones {
   background-color: #F7F2E0;
-  border-radius: 5px;
-  width: 140px;
-  height: 70px;
-  
+  border-radius: 7px;
+  width: 10%;
+  height: 55px;
+  border-color: #A67745;
+
 }
 
-.textArea{
+.textArea {
   border-radius: 5px;
   margin: 0.5%;
+  resize: none;
+  border-color: #A67745;
+  border-width: 2px;
+  overflow:
+}
+
+.textShadow {
+  text-shadow: 5px 1px 2px black, 0 0 1em black, 0 0 0.2em black
 }
 
 h1 {
   font-family: 'Fredericka the Great', cursive;
   font-size: 6vw;
-  color:white;
+  color: white;
 }
 
 p {
-    font-family: 'Courgette', cursive;
-    font-size: 2.5vw;
-    color:white;
+  font-family: 'Courgette', cursive;
+  font-size: 2.5vw;
+  color: white;
 }
 
 h2 {
-    font-family: 'Fredericka the Great', cursive;
-    font-size: 150%;
-    color: #A67745
+  font-family: 'Fredericka the Great', cursive;
+  font-size: 150%;
+  color: #A67745
 }
 
-body{
+body {
   border-width: 0px;
 }
 
-header{
-  padding: 5%;
+header {
+  padding: 3%;
 }
 
 
-#Pantalla1 {
+#pantalla1 {
   background-image:
-    url("https://www.alunira.com/IMG/arton9.jpg?1472546134"); 
+    url("https://www.alunira.com/IMG/arton9.jpg?1472546134");
   background-attachment: fixed;
   background-size: cover;
-  background-repeat:no-repeat;
-  height: 600px;
-  
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 630px;
+
 
 }
 
-#parr{
-  background-color:rgba(209, 208, 207, 0.8);
+#parr {
+  /*background-color: rgba(209, 208, 207, 0.8);*/
   padding: 0.5%;
   transform: translate(0px, -70px);
   margin-right: 10%;
   margin-left: 10%;
+  margin-top: 4%;
 
 }
 
-#Pantalla2 {
+#pantalla2 {
   background-image:
     url("http://www.cronicanorte.es/wp-content/uploads/2016/07/mapa-tesoro-b%C3%BAsqueda.jpg");
   background-attachment: fixed;
   background-size: cover;
   height: 800px;
+  background-position: center;
 }
 
-#Pantalla3 {
+#pantalla3 {
   background-image:
     url("http://www.cronicanorte.es/wp-content/uploads/2016/07/mapa-tesoro-b%C3%BAsqueda.jpg");
   background-attachment: fixed;
   background-size: cover;
   height: 800px;
+  background-position: center;
 }
-

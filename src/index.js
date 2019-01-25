@@ -10,21 +10,21 @@ document.getElementById("borrar2").addEventListener("click",clear2);
 
 //cambio de pantallas
 function page1() {
-  document.getElementById("Pantalla1").style.display = "none";
-  document.getElementById("Pantalla2").style.display = "block";
-  document.getElementById("Pantalla3").style.display = "none";
+  document.getElementById("pantalla1").style.display = "none";
+  document.getElementById("pantalla2").style.display = "block";
+  document.getElementById("pantalla3").style.display = "none";
 }
 
 function page2() {
-  document.getElementById("Pantalla1").style.display = "none";
-  document.getElementById("Pantalla3").style.display = "block";
-  document.getElementById("Pantalla2").style.display = "none";
+  document.getElementById("pantalla1").style.display = "none";
+  document.getElementById("pantalla3").style.display = "block";
+  document.getElementById("pantalla2").style.display = "none";
 }
 
 function page3() {
-  document.getElementById("Pantalla1").style.display = "block";
-  document.getElementById("Pantalla2").style.display = "none";
-  document.getElementById("Pantalla3").style.display = "none";
+  document.getElementById("pantalla1").style.display = "block";
+  document.getElementById("pantalla2").style.display = "none";
+  document.getElementById("pantalla3").style.display = "none";
 }
 
 //para limpiar campos
